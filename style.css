@@ -12,50 +12,6 @@ body{
   color: #fff;
 }
 
-/* Menambahkan ke style.css yang sudah ada */
-
-/* Bola */
-.moving-ball {
-  width: 20px;
-  height: 20px;
-  background-color: #fff; 
-  border-radius: 50%; 
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10; 
-}
-
-/* Efek debu */
-.dust {
-  position: absolute;
-  width: 8px;
-  height: 4px;
-  background-color: rgba(255, 255, 255, 0.5); /* Warna debu */
-  border-radius: 50%;
-  opacity: 0;
-  animation: dustEffect 1s ease-out infinite;
-  pointer-events: none; /* Agar debu tidak mengganggu interaksi */
-}
-
-@keyframes dustEffect {
-  0% {
-    transform: scale(0.5) translate(0, 0);
-    opacity: 0.5;
-  }
-  50% {
-    transform: scale(1) translate(5px, -5px); /* Gerak debu */
-    opacity: 0.8;
-  }
-  100% {
-    transform: scale(0.5) translate(10px, -10px); /* Gerak debu lebih jauh */
-    opacity: 0;
-  }
-}
-
-
-
 .container{
   display: flex;
   flex-direction: column;
