@@ -3,6 +3,8 @@
   margin: 0;
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
+  -webkit-focus-ring-color: transparent;
+  outline: none;
 }
 
 body {
@@ -65,7 +67,6 @@ img {
   justify-content: space-between;
   background-color: #222;
   padding: 20px 18px;
-  -webkit-tap-highlight-color: transparent;
   align-items: center;
   color: #fff;
   text-decoration: none;
@@ -75,6 +76,13 @@ img {
   color: #fff;
   transition: color 300ms ease-in-out;
   transition: background-color 300ms ease-in-out, box-shadow 500ms ease-in-out;
+    -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+a:focus, button:focus, .link-card:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 @media (max-width: 500px) {
